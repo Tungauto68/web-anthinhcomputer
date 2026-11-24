@@ -1,17 +1,15 @@
 <!doctype html><html lang="vi"><head><meta charset="utf-8">
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@600;800&display=swap" rel="stylesheet">
-<style>
-*{margin:0;padding:0}
-body{width:760px;height:260px;overflow:hidden;display:flex;align-items:center;justify-content:center;gap:22px;font-family:"Be Vietnam Pro",sans-serif}
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@700;800&display=swap" rel="stylesheet">
+<style>*{margin:0;box-sizing:border-box}
+body{width:800px;height:260px;overflow:hidden;display:flex;align-items:center;justify-content:center;gap:14px;font-family:"Be Vietnam Pro",sans-serif}
 body.dark{background:#14213D}
-body.sq{width:500px;height:500px}
-img{width:200px;height:200px}
-body.sq img{width:420px;height:420px}
-.w strong{display:block;font-size:66px;font-weight:800;color:#C1121F;line-height:1.1;letter-spacing:.01em}
-.w small{display:block;font-size:24px;font-weight:600;color:#14213D;letter-spacing:.62em;padding-top:8px;padding-left:4px}
-.dark .w strong{color:#FFB703}.dark .w small{color:#fff}
-body.sq .w{display:none}
-</style></head>
-<body><img src="../logo-mark.svg"><div class="w"><strong>AN THỊNH</strong><small>COMPUTER</small></div>
-<script>var q=location.search;if(q.indexOf('dark')>-1)document.body.classList.add('dark');if(q.indexOf('sq')>-1)document.body.classList.add('sq');</script>
+img{width:210px;display:block}
+.w strong{display:block;white-space:nowrap;font-size:52px;font-weight:800;line-height:1.1;letter-spacing:-.01em;color:#14213D}
+.w strong span{color:#F5A300}
+.w small{display:block;white-space:nowrap;font-size:19px;font-weight:700;padding-top:6px;color:#1F3260}
+.dark .w strong{color:#fff}.dark .w strong span{color:#FFB703}.dark .w small{color:#C9D3E8}
+body.sq{width:500px;height:430px}body.sq img{width:460px}body.sq .w{display:none}
+</style></head><body>
+<img id="l"><div class="w"><strong>An Thịnh <span>Computer</span></strong><small>Sửa chữa máy tính · Dịch vụ IT doanh nghiệp</small></div>
+<script>var q=location.search,d=q.indexOf('dark')>-1;if(d)document.body.classList.add('dark');if(q.indexOf('sq')>-1)document.body.classList.add('sq');document.getElementById('l').src=d?'../logo-mark-dark.svg':'../logo-mark.svg';</script>
 </body></html>

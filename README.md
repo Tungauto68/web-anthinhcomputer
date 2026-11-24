@@ -8,7 +8,7 @@ Website tĩnh (HTML/CSS/JS thuần), không cần build — chạy trực tiếp
 - `index.html` – nội dung trang
 - `styles.css` – giao diện
 - `script.js` – menu mobile, hiệu ứng, form liên hệ (mở email)
-- `logo-mark.svg` – biểu tượng logo (bánh răng chữ A)
+- `logo-mark.svg` / `logo-mark-dark.svg` – logo chữ A (nền sáng / nền tối)
 - `brand/` – ảnh bìa, ảnh đại diện fanpage và PNG logo
 
 ## Cập nhật thông tin liên hệ

@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>An Thịnh Computer – Sửa chữa máy tính, máy in & Dịch vụ IT doanh nghiệp</title>
+<meta name="description" content="An Thịnh Computer: sửa chữa PC, laptop, máy in; IT Helpdesk, IT Outsourcing, quản trị hạ tầng mạng, server, Microsoft 365 cho doanh nghiệp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+
+<!-- SVG icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></g></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></g></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></g></symbol>
+    <symbol id="i-pc" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></g></symbol>
+    <symbol id="i-laptop" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="11" rx="1.5"/><path d="M2 19h20"/></g></symbol>
+    <symbol id="i-printer" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></g></symbol>
+    <symbol id="i-tool" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9l-3.8 3.8z"/></symbol>
+    <symbol id="i-data" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.7-4 3-9 3s-9-1.3-9-3"/><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"/></g></symbol>
+    <symbol id="i-headset" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-7h3zM3 19a2 2 0 0 0 2 2h1v-7H3z"/></g></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></g></symbol>
+    <symbol id="i-network" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="16" y="16" width="6" height="6" rx="1"/><path d="M12 8v4M5 16v-4h14v4"/></g></symbol>
+    <symbol id="i-server" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="3" width="20" height="8" rx="2"/><rect x="2" y="13" width="20" height="8" rx="2"/><path d="M6 7h.01M6 17h.01"/></g></symbol>
+    <symbol id="i-cloud" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M18 10h-1.3A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></g></symbol>
+    <symbol id="i-ms" viewBox="0 0 24 24"><g fill="currentColor"><rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="8" rx="1" opacity=".75"/><rect x="3" y="13" width="8" height="8" rx="1" opacity=".75"/><rect x="13" y="13" width="8" height="8" rx="1" opacity=".5"/></g></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></g></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.7l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.7l7 4a2 2 0 0 0 2 0l7-4a2 2 0 0 0 1-1.7z"/><path d="M3.3 7 12 12l8.7-5M12 22V12"/></g></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></g></symbol>
+    <symbol id="i-ink" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 2.7 6.3 8.4a8 8 0 1 0 11.4 0z"/></symbol>
+    <symbol id="i-wifi" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M5 12.6a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0M2 8.8a15 15 0 0 1 20 0M12 20h.01"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M3 6h18M3 12h18M3 18h18"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.5 8.5 0 0 1-3.8-.9L3 21l2-5.2A8.4 8.4 0 0 1 12 3a8.5 8.5 0 0 1 9 8.5z"/></symbol>
+  </defs>
+</svg>
+
+<!-- Top bar -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <div class="topbar-left">
+      <a href="tel:0900000000"><svg class="ic"><use href="#i-phone"/></svg> Hotline: <strong>0900 000 000</strong></a>
+      <a href="mailto:lienhe@anthinhcomputer.vn"><svg class="ic"><use href="#i-mail"/></svg> lienhe@anthinhcomputer.vn</a>
+    </div>
+    <div class="topbar-right">
+      <span><svg class="ic"><use href="#i-clock"/></svg> T2 – T7: 8:00 – 18:00 · Hỗ trợ khẩn cấp 24/7</span>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="header" id="top">
+  <div class="container header-inner">
+    <a href="#top" class="logo" aria-label="An Thịnh Computer">
+      <span class="logo-mark">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#0B2A5B"/><path d="M11 29 19 11h2l8 18" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M14.5 23h11" stroke="#3FA9F5" stroke-width="3" stroke-linecap="round"/></svg>
+      </span>
+      <span class="logo-text"><strong>AN THỊNH</strong><small>COMPUTER</small></span>
+    </a>
+    <nav class="nav" id="nav">
+      <div class="nav-item has-drop">
+        <a href="#dich-vu">Dịch vụ <svg class="ic sm"><use href="#i-chev"/></svg></a>
+        <div class="dropdown">
+          <div class="drop-col">
+            <h6>Sửa chữa & Bảo trì</h6>
+            <a href="#dich-vu">Sửa chữa PC, Laptop</a>
+            <a href="#dich-vu">Sửa chữa máy in, nạp mực</a>
+            <a href="#dich-vu">Bảo trì máy tính định kỳ</a>
+            <a href="#dich-vu">Cứu dữ liệu</a>
+          </div>
+          <div class="drop-col">
+            <h6>Dịch vụ IT doanh nghiệp</h6>
+            <a href="#dich-vu">IT Helpdesk & Remote Support</a>
+            <a href="#dich-vu">IT Outsourcing trọn gói</a>
+            <a href="#dich-vu">Hạ tầng mạng & Server</a>
+            <a href="#dich-vu">Microsoft 365</a>
+          </div>
+        </div>
+      </div>
+      <a href="#mo-hinh">Mô hình hỗ trợ</a>
+      <a href="#san-pham">Sản phẩm</a>
+      <a href="#quy-trinh">Quy trình</a>
+      <a href="#ve-chung-toi">Về chúng tôi</a>
+      <a href="#faq">Hỏi đáp</a>
+      <a href="#lien-he" class="nav-cta-mobile btn btn-primary">Tư vấn miễn phí</a>
+    </nav>
+    <a href="#lien-he" class="btn btn-primary header-cta">Tư vấn miễn phí</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Mở menu"><svg class="ic lg"><use href="#i-menu"/></svg></button>
+  </div>
+</header>
+
+<main>
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <span class="eyebrow">Sửa chữa · IT Helpdesk · Hạ tầng mạng · Microsoft 365</span>
+      <h1>Hệ thống IT vận hành ổn định.<br><span class="grad">Doanh nghiệp yên tâm phát triển.</span></h1>
+      <p class="lead">An Thịnh Computer cung cấp dịch vụ sửa chữa máy tính, máy in và giải pháp IT trọn gói cho doanh nghiệp: hỗ trợ người dùng, quản trị mạng, server, Microsoft 365, sao lưu và bảo mật — một đầu mối, chịu trách nhiệm đến cùng.</p>
+      <div class="hero-actions">
+        <a href="#lien-he" class="btn btn-primary btn-lg">Nhận tư vấn giải pháp <svg class="ic"><use href="#i-arrow"/></svg></a>
+        <a href="#dich-vu" class="btn btn-ghost btn-lg">Khám phá dịch vụ</a>
+      </div>
+      <ul class="hero-trust">
+        <li><svg class="ic"><use href="#i-check"/></svg> Hóa đơn VAT đầy đủ</li>
+        <li><svg class="ic"><use href="#i-check"/></svg> Phản hồi trong 15 phút</li>
+        <li><svg class="ic"><use href="#i-check"/></svg> Kỹ thuật viên có mặt tận nơi</li>
+      </ul>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <div class="panel">
+        <div class="panel-head">
+          <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+          <span class="panel-title">Bảng giám sát hệ thống</span>
+        </div>
+        <div class="panel-status">
+          <div><small>Trạng thái</small><strong class="ok">● Hoạt động ổn định</strong></div>
+          <div><small>Uptime tháng</small><strong>99.9%</strong></div>
+        </div>
+        <ul class="panel-list">
+          <li><svg class="ic"><use href="#i-network"/></svg><span>Mạng LAN / Wi-Fi</span><em class="tag ok">Online</em></li>
+          <li><svg class="ic"><use href="#i-server"/></svg><span>File Server / NAS</span><em class="tag ok">Online</em></li>
+          <li><svg class="ic"><use href="#i-ms"/></svg><span>Microsoft 365</span><em class="tag ok">Đồng bộ</em></li>
+          <li><svg class="ic"><use href="#i-data"/></svg><span>Sao lưu dữ liệu</span><em class="tag info">02:00 hằng ngày</em></li>
+          <li><svg class="ic"><use href="#i-printer"/></svg><span>Máy in tầng 2</span><em class="tag warn">Sắp hết mực</em></li>
+        </ul>
+        <div class="panel-ticket">
+          <svg class="ic"><use href="#i-headset"/></svg>
+          <div><strong>Ticket #1024 đã xử lý</strong><small>Cấu hình Outlook cho nhân viên mới · 12 phút</small></div>
+        </div>
+      </div>
+      <div class="float-chip c1"><svg class="ic"><use href="#i-shield"/></svg> Bảo mật nhiều lớp</div>
+      <div class="float-chip c2"><svg class="ic"><use href="#i-cloud"/></svg> Cloud & Backup</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="stats">
+      <div class="stat"><strong data-count="10">10</strong><span>+ năm kinh nghiệm</span></div>
+      <div class="stat"><strong data-count="500">500</strong><span>+ doanh nghiệp tin dùng</span></div>
+      <div class="stat"><strong>15'</strong><span>thời gian phản hồi</span></div>
+      <div class="stat"><strong>24/7</strong><span>hỗ trợ sự cố khẩn cấp</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="section" id="dich-vu">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">Dịch vụ</span>
+      <h2>Giải pháp công nghệ toàn diện cho văn phòng & doanh nghiệp</h2>
+      <p>Từ chiếc máy tính của từng nhân viên đến toàn bộ hạ tầng mạng, server và cloud — chúng tôi chăm sóc tất cả theo một tiêu chuẩn vận hành thống nhất.</p>
+    </div>
+
+    <div class="svc-group">
+      <div class="svc-group-head"><span class="num">A</span><h3>Sửa chữa & Bảo trì thiết bị</h3></div>
+      <div class="grid g4">
+        <article class="card svc">
+          <div class="svc-ic"><svg class="ic"><use href="#i-pc"/></svg></div>
+          <h4>Sửa chữa PC & Laptop</h4>
+          <p>Chẩn đoán, sửa lỗi phần cứng, thay linh kiện, cài đặt hệ điều hành, phần mềm và nâng cấp hiệu năng.</p>
+          <ul class="mini"><li>Lấy & giao máy tận nơi</li><li>Bảo hành sau sửa chữa</li></ul>
+        </article>
+        <article class="card svc">
+          <div class="svc-ic"><svg class="ic"><use href="#i-printer"/></svg></div>
+          <h4>Sửa máy in & Nạp mực</h4>
+          <p>Sửa máy in laser, phun, đa chức năng; nạp mực, thay drum, cấu hình in qua mạng cho cả văn phòng.</p>
+          <ul class="mini"><li>Hỗ trợ đa thương hiệu</li><li>Nạp mực tại chỗ</li></ul>
+        </article>
+        <article class="card svc">
+          <div class="svc-ic"><svg class="ic"><use href="#i-tool"/></svg></div>
+          <h4>Bảo trì định kỳ</h4>
+          <p>Vệ sinh, kiểm tra, cập nhật và tối ưu thiết bị theo lịch, phòng ngừa sự cố trước khi chúng xảy ra.</p>
+          <ul class="mini"><li>Báo cáo sau mỗi lần bảo trì</li><li>Hợp đồng theo tháng / quý</li></ul>
+        </article>
+        <article class="card svc">
+          <div class="svc-ic"><svg class="ic"><use href="#i-data"/></svg></div>
+          <h4>Cứu dữ liệu</h4>
+          <p>Khôi phục dữ liệu từ ổ cứng, SSD, USB, thẻ nhớ bị hỏng, xóa nhầm hoặc nhiễm mã độc.</p>
+          <ul class="mini"><li>Bảo mật tuyệt đối</li><li>Kiểm tra miễn phí</li></ul>
+        </article>
+      </div>
+    </div>
+
+    <div class="svc-group">
+      <div class="svc-group-head"><span class="num">B</span><h3>Dịch vụ IT cho doanh nghiệp</h3></div>
+      <div class="grid g3">
+        <article class="card svc feature">
+          <div class="svc-ic"><svg class="ic"><use href="#i-headset"/></svg></div>
+          <h4>IT Helpdesk & Remote Support</h4>
+          <p>Tiếp nhận và xử lý yêu cầu của người dùng qua điện thoại, Zalo, email và điều khiển từ xa — nhanh, có ghi nhận ticket.</p>
+        </article>
+        <article class="card svc feature">
+          <div class="svc-ic"><svg class="ic"><use href="#i-users"/></svg></div>
+          <h4>IT Outsourcing trọn gói</h4>
+          <p>Đóng vai trò phòng IT của doanh nghiệp: quản trị thiết bị, tài khoản, phần mềm, onsite định kỳ và tư vấn đầu tư CNTT.</p>
+        </article>
+        <article class="card svc feature">
+          <div class="svc-ic"><svg class="ic"><use href="#i-network"/></svg></div>
+          <h4>Hạ tầng mạng LAN / Wi-Fi</h4>
+          <p>Khảo sát, thiết kế, thi công cáp, cấu hình router, switch, firewall, VLAN, VPN và Wi-Fi phủ sóng ổn định.</p>
+        </article>
+        <article class="card svc feature">
+          <div class="svc-ic"><svg class="ic"><use href="#i-server"/></svg></div>
+          <h4>Quản trị Server & Storage</h4>
+          <p>Triển khai Windows Server, Active Directory, File Server, NAS, ảo hóa; giám sát và cập nhật bảo mật thường xuyên.</p>
+        </article>
+        <article class="card svc feature">
+          <div class="svc-ic ms"><svg class="ic"><use href="#i-ms"/></svg></div>
+          <h4>Microsoft 365</h4>
+          <p>Tư vấn license, chuyển đổi email tên miền, triển khai Outlook, Teams, SharePoint, OneDrive và chính sách bảo mật.</p>
+        </article>
+        <article class="card svc feature">
+          <div class="svc-ic"><svg class="ic"><use href="#i-shield"/></svg></div>
+          <h4>Sao lưu & Bảo mật</h4>
+          <p>Backup dữ liệu tự động, phòng chống ransomware, antivirus doanh nghiệp, MFA và phục hồi hệ thống khi có sự cố.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Ecosystem chain -->
+<section class="section dark" id="he-sinh-thai">
+  <div class="container">
+    <div class="section-head light">
+      <span class="kicker">Hệ sinh thái</span>
+      <h2>Hạ tầng IT là một chuỗi liên thông</h2>
+      <p>Một mắt xích yếu có thể làm gián đoạn cả doanh nghiệp. Chúng tôi quản lý từng lớp — từ người dùng đến dữ liệu sao lưu.</p>
+    </div>
+    <ol class="chain">
+      <li><svg class="ic"><use href="#i-users"/></svg><strong>Người dùng</strong><small>Tài khoản, quyền, hỗ trợ</small></li>
+      <li><svg class="ic"><use href="#i-laptop"/></svg><strong>Thiết bị</strong><small>PC, laptop, máy in</small></li>
+      <li><svg class="ic"><use href="#i-wifi"/></svg><strong>Mạng</strong><small>LAN, Wi-Fi, VPN</small></li>
+      <li><svg class="ic"><use href="#i-shield"/></svg><strong>Firewall</strong><small>Bảo mật vành đai</small></li>
+      <li><svg class="ic"><use href="#i-server"/></svg><strong>Server / Cloud</strong><small>AD, NAS, Microsoft 365</small></li>
+      <li><svg class="ic"><use href="#i-data"/></svg><strong>Backup</strong><small>Sao lưu & phục hồi</small></li>
+    </ol>
+  </div>
+</section>
+
+<!-- Support models -->
+<section class="section" id="mo-hinh">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">Mô hình hỗ trợ</span>
+      <h2>Linh hoạt theo quy mô và nhu cầu của bạn</h2>
+      <p>Không áp gói cứng nhắc. Chúng tôi khảo sát hiện trạng rồi đề xuất mô hình phù hợp nhất với ngân sách.</p>
+    </div>
+    <div class="grid g4">
+      <article class="card model">
+        <span class="model-num">01</span>
+        <h4>Remote-first</h4>
+        <p>Ưu tiên xử lý từ xa, chi phí tối ưu cho văn phòng nhỏ, đội ngũ làm việc linh hoạt.</p>
+      </article>
+      <article class="card model">
+        <span class="model-num">02</span>
+        <h4>Onsite định kỳ</h4>
+        <p>Kỹ sư đến văn phòng theo lịch cố định hằng tuần / tháng để kiểm tra và hỗ trợ trực tiếp.</p>
+      </article>
+      <article class="card model highlight">
+        <span class="badge">Phổ biến nhất</span>
+        <span class="model-num">03</span>
+        <h4>IT trọn gói (Hybrid)</h4>
+        <p>Kết hợp helpdesk từ xa, onsite định kỳ và quản trị hạ tầng — thay thế hoàn toàn phòng IT.</p>
+      </article>
+      <article class="card model">
+        <span class="model-num">04</span>
+        <h4>Đồng quản trị</h4>
+        <p>Phối hợp cùng IT nội bộ, bổ sung chuyên môn về mạng, server, Microsoft 365 và bảo mật.</p>
+      </article>
+    </div>
+
+    <div class="scope">
+      <div class="scope-col in">
+        <h4><svg class="ic"><use href="#i-check"/></svg> Thường bao gồm trong phí dịch vụ IT</h4>
+        <ul>
+          <li>Helpdesk: tiếp nhận & xử lý yêu cầu người dùng</li>
+          <li>Onsite theo lịch đã thỏa thuận</li>
+          <li>Quản trị tài khoản, email, phân quyền</li>
+          <li>Kiểm tra định kỳ mạng, server, sao lưu</li>
+          <li>Cập nhật tài liệu hệ thống & báo cáo hằng tháng</li>
+        </ul>
+      </div>
+      <div class="scope-col out">
+        <h4><svg class="ic"><use href="#i-box"/></svg> Báo giá riêng theo dự án</h4>
+        <ul>
+          <li>Thi công hệ thống cáp, phòng server mới</li>
+          <li>Thiết kế lại toàn bộ mạng / Wi-Fi</li>
+          <li>Chuyển đổi dữ liệu, email quy mô lớn</li>
+          <li>Mua sắm thiết bị, bản quyền phần mềm</li>
+          <li>Dự án bảo mật, cloud chuyên sâu</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+<section class="section alt" id="quy-trinh">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">Quy trình</span>
+      <h2>Triển khai bài bản trong 4 bước</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><span class="step-n">01</span><h4>Khảo sát</h4><p>Kiểm kê người dùng, thiết bị, mạng, server, phần mềm và các vấn đề đang gặp.</p></div>
+      <div class="step"><span class="step-n">02</span><h4>Chuẩn hóa</h4><p>Thống nhất đầu mối, quyền truy cập, phạm vi, lịch làm việc và quy trình xử lý sự cố.</p></div>
+      <div class="step"><span class="step-n">03</span><h4>Vận hành</h4><p>Helpdesk, onsite, bảo trì, quản trị mạng – server – Microsoft 365 hằng ngày.</p></div>
+      <div class="step"><span class="step-n">04</span><h4>Cải tiến</h4><p>Phân tích sự cố lặp lại, báo cáo định kỳ và đề xuất nâng cấp theo rủi ro & ngân sách.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Products -->
+<section class="section" id="san-pham">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">Sản phẩm</span>
+      <h2>Cung cấp thiết bị chính hãng cho văn phòng</h2>
+      <p>Tư vấn cấu hình đúng nhu cầu, hóa đơn VAT, bảo hành chính hãng và hỗ trợ lắp đặt tận nơi.</p>
+    </div>
+    <div class="grid g6 products">
+      <a href="#lien-he" class="prod"><svg class="ic"><use href="#i-pc"/></svg><span>Máy tính để bàn</span></a>
+      <a href="#lien-he" class="prod"><svg class="ic"><use href="#i-laptop"/></svg><span>Laptop</span></a>
+      <a href="#lien-he" class="prod"><svg class="ic"><use href="#i-printer"/></svg><span>Máy in & Photocopy</span></a>
+      <a href="#lien-he" class="prod"><svg class="ic"><use href="#i-ink"/></svg><span>Mực in & Vật tư</span></a>
+      <a href="#lien-he" class="prod"><svg class="ic"><use href="#i-wifi"/></svg><span>Thiết bị mạng</span></a>
+      <a href="#lien-he" class="prod"><svg class="ic"><use href="#i-cpu"/></svg><span>Linh kiện & Nâng cấp</span></a>
+      <a href="#lien-he" class="prod"><svg class="ic"><use href="#i-server"/></svg><span>Server & NAS</span></a>
+      <a href="#lien-he" class="prod"><svg class="ic"><use href="#i-camera"/></svg><span>Camera giám sát</span></a>
+      <a href="#lien-he" class="prod"><svg class="ic"><use href="#i-ms"/></svg><span>Bản quyền Microsoft</span></a>
+      <a href="#lien-he" class="prod"><svg class="ic"><use href="#i-shield"/></svg><span>Phần mềm diệt virus</span></a>
+      <a href="#lien-he" class="prod"><svg class="ic"><use href="#i-data"/></svg><span>Lưu trữ & Backup</span></a>
+      <a href="#lien-he" class="prod"><svg class="ic"><use href="#i-box"/></svg><span>Bộ lưu điện UPS</span></a>
+    </div>
+    <div class="chips">
+      <span>Hóa đơn VAT</span><span>CO/CQ theo sản phẩm</span><span>Báo giá dự án</span><span>Hỗ trợ lắp đặt</span>
+    </div>
+  </div>
+</section>
+
+<!-- Why us -->
+<section class="section alt" id="ve-chung-toi">
+  <div class="container why">
+    <div class="why-copy">
+      <span class="kicker">Vì sao chọn An Thịnh</span>
+      <h2>Đối tác IT đáng tin cậy, đồng hành lâu dài</h2>
+      <p>Chúng tôi không chỉ sửa khi hỏng. Mục tiêu của An Thịnh Computer là giúp hệ thống của bạn ít hỏng hơn, dữ liệu an toàn hơn và chi phí IT minh bạch, dễ dự đoán.</p>
+      <a href="#lien-he" class="btn btn-primary">Trao đổi với chúng tôi <svg class="ic"><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="why-list">
+      <div class="why-item"><span>01</span><div><h4>Một đầu mối chịu trách nhiệm</h4><p>Từ sửa máy in đến quản trị server — chỉ cần gọi một số, không phải làm việc với nhiều nhà cung cấp.</p></div></div>
+      <div class="why-item"><span>02</span><div><h4>Ưu tiên sự ổn định</h4><p>Thiết kế thực tế, tài liệu rõ ràng, không phụ thuộc vào một cá nhân.</p></div></div>
+      <div class="why-item"><span>03</span><div><h4>Bảo mật nhiều lớp</h4><p>Thiết bị, tài khoản, mạng, cloud và sao lưu nằm trong cùng một chiến lược.</p></div></div>
+      <div class="why-item"><span>04</span><div><h4>Phù hợp doanh nghiệp Việt</h4><p>Chi phí hợp lý, hóa đơn VAT, hỗ trợ tiếng Việt và phản hồi nhanh tại chỗ.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="container narrow">
+    <div class="section-head">
+      <span class="kicker">Hỏi đáp</span>
+      <h2>Câu hỏi thường gặp</h2>
+    </div>
+    <div class="faq">
+      <details open><summary>Có hỗ trợ tận nơi (onsite) không?<svg class="ic"><use href="#i-chev"/></svg></summary><p>Có. Ngoài hỗ trợ từ xa, kỹ thuật viên sẽ đến trực tiếp văn phòng theo lịch định kỳ hoặc khi có sự cố cần xử lý tại chỗ.</p></details>
+      <details><summary>Chi phí dịch vụ IT được tính thế nào?<svg class="ic"><use href="#i-chev"/></svg></summary><p>Chi phí phụ thuộc số người dùng, số thiết bị, hiện trạng hạ tầng, tần suất onsite và mức cam kết thời gian phản hồi. Chúng tôi khảo sát miễn phí trước khi báo giá.</p></details>
+      <details><summary>Có thể tiếp quản hệ thống từ nhà cung cấp cũ không?<svg class="ic"><use href="#i-chev"/></svg></summary><p>Được. Chúng tôi sẽ kiểm kê, ghi nhận lại tài liệu, mật khẩu quản trị và chuẩn hóa hệ thống trước khi chính thức vận hành.</p></details>
+      <details><summary>Dịch vụ có bao gồm Microsoft 365, mạng, firewall không?<svg class="ic"><use href="#i-chev"/></svg></summary><p>Có. Quản trị Microsoft 365, mạng LAN/Wi-Fi, firewall và server đều nằm trong phạm vi dịch vụ IT trọn gói, tùy theo thỏa thuận.</p></details>
+      <details><summary>Doanh nghiệp đã có IT nội bộ có dùng được không?<svg class="ic"><use href="#i-chev"/></svg></summary><p>Hoàn toàn được với mô hình đồng quản trị: chúng tôi bổ sung chuyên môn và nhân lực khi IT nội bộ cần hỗ trợ.</p></details>
+      <details><summary>Sửa máy tính, máy in mất bao lâu?<svg class="ic"><use href="#i-chev"/></svg></summary><p>Phần lớn lỗi phần mềm và lỗi thông thường được xử lý trong ngày. Trường hợp cần thay linh kiện, chúng tôi báo thời gian và chi phí trước khi thực hiện.</p></details>
+      <details><summary>Thông tin và quyền truy cập được bảo mật ra sao?<svg class="ic"><use href="#i-chev"/></svg></summary><p>Quyền truy cập được cấp theo nguyên tắc tối thiểu, có ghi nhận nhật ký và cam kết bảo mật thông tin trong hợp đồng dịch vụ.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="section cta" id="lien-he">
+  <div class="container contact">
+    <div class="contact-copy">
+      <span class="kicker light">Liên hệ</span>
+      <h2>Cần một đối tác IT cho doanh nghiệp của bạn?</h2>
+      <p>Mô tả hiện trạng, số người dùng và mục tiêu — chúng tôi sẽ gửi đề xuất giải pháp trước khi báo giá. Hoàn toàn miễn phí.</p>
+      <ul class="contact-list">
+        <li><svg class="ic"><use href="#i-phone"/></svg><div><small>Hotline</small><a href="tel:0900000000">0900 000 000</a></div></li>
+        <li><svg class="ic"><use href="#i-mail"/></svg><div><small>Email</small><a href="mailto:lienhe@anthinhcomputer.vn">lienhe@anthinhcomputer.vn</a></div></li>
+        <li><svg class="ic"><use href="#i-pin"/></svg><div><small>Địa chỉ</small><span>Số ..., Đường ..., Quận ..., TP. Hồ Chí Minh</span></div></li>
+      </ul>
+    </div>
+    <form class="form" id="contactForm">
+      <h3>Đăng ký tư vấn miễn phí</h3>
+      <div class="row2">
+        <label>Họ và tên *<input name="name" required placeholder="Nguyễn Văn A"></label>
+        <label>Số điện thoại *<input name="phone" required type="tel" placeholder="09xx xxx xxx"></label>
+      </div>
+      <label>Công ty<input name="company" placeholder="Tên doanh nghiệp"></label>
+      <label>Nhu cầu
+        <select name="service">
+          <option>Sửa chữa PC / Laptop</option>
+          <option>Sửa máy in / Nạp mực</option>
+          <option>IT Helpdesk / IT trọn gói</option>
+          <option>Hạ tầng mạng / Server</option>
+          <option>Microsoft 365</option>
+          <option>Mua thiết bị</option>
+          <option>Khác</option>
+        </select>
+      </label>
+      <label>Nội dung<textarea name="message" rows="4" placeholder="Mô tả ngắn hiện trạng, số người dùng..."></textarea></label>
+      <button class="btn btn-primary btn-lg btn-block" type="submit">Gửi yêu cầu <svg class="ic"><use href="#i-arrow"/></svg></button>
+      <p class="form-note">Chúng tôi phản hồi trong giờ làm việc trong vòng 15 phút.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="f-brand">
+      <a href="#top" class="logo light">
+        <span class="logo-mark"><svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#1557D6"/><path d="M11 29 19 11h2l8 18" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M14.5 23h11" stroke="#9CD3FF" stroke-width="3" stroke-linecap="round"/></svg></span>
+        <span class="logo-text"><strong>AN THỊNH</strong><small>COMPUTER</small></span>
+      </a>
+      <p>Sửa chữa máy tính, máy in và dịch vụ IT trọn gói cho doanh nghiệp.</p>
+      <ul class="f-info">
+        <li><svg class="ic"><use href="#i-pin"/></svg> Số ..., Đường ..., TP. Hồ Chí Minh</li>
+        <li><svg class="ic"><use href="#i-phone"/></svg> 0900 000 000</li>
+        <li><svg class="ic"><use href="#i-mail"/></svg> lienhe@anthinhcomputer.vn</li>
+      </ul>
+    </div>
+    <div>
+      <h5>Sửa chữa & Bảo trì</h5>
+      <a href="#dich-vu">Sửa chữa PC, Laptop</a>
+      <a href="#dich-vu">Sửa máy in, nạp mực</a>
+      <a href="#dich-vu">Bảo trì định kỳ</a>
+      <a href="#dich-vu">Cứu dữ liệu</a>
+    </div>
+    <div>
+      <h5>Dịch vụ IT</h5>
+      <a href="#dich-vu">IT Helpdesk</a>
+      <a href="#dich-vu">IT Outsourcing</a>
+      <a href="#dich-vu">Hạ tầng mạng & Server</a>
+      <a href="#dich-vu">Microsoft 365</a>
+      <a href="#dich-vu">Sao lưu & Bảo mật</a>
+    </div>
+    <div>
+      <h5>Công ty</h5>
+      <a href="#ve-chung-toi">Về chúng tôi</a>
+      <a href="#quy-trinh">Quy trình làm việc</a>
+      <a href="#san-pham">Sản phẩm</a>
+      <a href="#faq">Hỏi đáp</a>
+      <a href="#lien-he">Liên hệ</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© <span id="year">2026</span> An Thịnh Computer. Bảo lưu mọi quyền.</span>
+    <span>Chính sách bảo hành · Điều khoản dịch vụ</span>
+  </div>
+</footer>
+
+<!-- Floating contact -->
+<div class="floating">
+  <a href="https://zalo.me/0900000000" target="_blank" rel="noopener" class="fab zalo" aria-label="Chat Zalo"><svg class="ic"><use href="#i-chat"/></svg></a>
+  <a href="tel:0900000000" class="fab call" aria-label="Gọi hotline"><svg class="ic"><use href="#i-phone"/></svg></a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -8,10 +8,11 @@ Website tĩnh (HTML/CSS/JS thuần), không cần build — chạy trực tiếp
 - `index.html` – nội dung trang
 - `styles.css` – giao diện
 - `script.js` – menu mobile, hiệu ứng, form liên hệ (mở email)
-- `favicon.svg` – biểu tượng
+- `logo-at*.svg` – logo AT (nền sáng / nền tối)
+- `brand/` – ảnh bìa, ảnh đại diện fanpage và PNG logo
 
 ## Cập nhật thông tin liên hệ
 Tìm và thay trong `index.html` / `script.js`:
-- `0900 000 000` / `0900000000` – hotline & Zalo
+- `0936 086 534` / `0936086534` – hotline & Zalo
 - `lienhe@anthinhcomputer.vn` – email
 - `Số ..., Đường ...` – địa chỉ

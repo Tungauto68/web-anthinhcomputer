@@ -388,3 +388,12 @@ h1,h2,h3,h4,h5,h6{color:var(--ink);line-height:1.25;font-weight:700}
 .logo-text small{color:var(--gold-600);font-size:15px;letter-spacing:0;font-weight:800;margin-top:1px}
 .logo.light .logo-text strong{color:#fff}
 .logo.light .logo-text small{color:var(--gold)}
+
+/* Wordmark 1 dòng, khớp file logo */
+.logo-text{flex-direction:row;align-items:center}
+.logo-text strong{display:block;white-space:nowrap;font-size:22px;letter-spacing:-.01em;color:var(--navy-800)}
+.logo-text strong em{font-style:normal;color:var(--gold-600)}
+.logo-text small{display:none}
+.logo.light .logo-text strong{color:#fff}
+.logo.light .logo-text strong em{color:var(--gold)}
+@media (max-width:400px){.logo-text strong{font-size:19px}.logo-mark img{height:40px}}

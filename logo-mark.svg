@@ -7,8 +7,7 @@
   <g transform="rotate(-14 105 112)"><ellipse cx="105" cy="112" rx="92" ry="26" fill="none" stroke="url(#o)" stroke-width="9"/></g>
   <circle cx="105" cy="98" r="72" fill="#FFB703"/>
   <g transform="translate(54.3 51.8) scale(.55) skewX(-12)">
-    <use href="#at" x="3" y="5" fill="#14213D" opacity=".28"/>
-    <use href="#at" fill="#FFFFFF"/>
+    <use href="#at" fill="#14213D"/>
   </g>
   <g transform="rotate(-14 105 112)"><g clip-path="url(#f)"><ellipse cx="105" cy="112" rx="92" ry="26" fill="none" stroke="url(#o)" stroke-width="9"/></g></g>
   <rect x="50" y="24" width="13" height="13" rx="2" fill="#FFB703"/>

@@ -1,5 +1,17 @@
-<!doctype html><html><head><meta charset="utf-8">
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@800&display=swap" rel="stylesheet">
-<style>*{margin:0}body{width:600px;height:420px;overflow:hidden;display:grid;place-items:center;font-family:"Be Vietnam Pro"}
-body.dark{background:#14213D}img{width:560px}</style></head>
-<body><img id="l"><script>var d=location.search.indexOf('dark')>-1;if(d)document.body.className='dark';document.getElementById('l').src=d?'../logo-at-dark.svg':'../logo-at.svg';</script></body></html>
+<!doctype html><html lang="vi"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@600;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0}
+body{width:760px;height:260px;overflow:hidden;display:flex;align-items:center;justify-content:center;gap:22px;font-family:"Be Vietnam Pro",sans-serif}
+body.dark{background:#14213D}
+body.sq{width:500px;height:500px}
+img{width:200px;height:200px}
+body.sq img{width:420px;height:420px}
+.w strong{display:block;font-size:66px;font-weight:800;color:#C1121F;line-height:1.1;letter-spacing:.01em}
+.w small{display:block;font-size:24px;font-weight:600;color:#14213D;letter-spacing:.62em;padding-top:8px;padding-left:4px}
+.dark .w strong{color:#FFB703}.dark .w small{color:#fff}
+body.sq .w{display:none}
+</style></head>
+<body><img src="../logo-mark.svg"><div class="w"><strong>AN THỊNH</strong><small>COMPUTER</small></div>
+<script>var q=location.search;if(q.indexOf('dark')>-1)document.body.classList.add('dark');if(q.indexOf('sq')>-1)document.body.classList.add('sq');</script>
+</body></html>
